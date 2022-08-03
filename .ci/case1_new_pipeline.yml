@@ -5,22 +5,7 @@ name: demo
  
 on:
   push:
-    branches:
-      - master
-      - release/*
-      - main
-    paths:
-      - src/*
-  tag:
-    tags:
-      - release_*
-    from-branches:
-      - master
-  mr:
-    target-branches:
-      - master
-    paths:
-      - src/*/*
+    branches: [ "*" ]
   
 variables:
   DEPLOY_TYPE: dev
