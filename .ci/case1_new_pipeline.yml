@@ -10,9 +10,10 @@ on:
       - master
 #     branches-ignore:
 #       - main
-    paths:
-      - src/*
-  
+#     paths:
+#       - src/*
+    users:
+      - buzhihuilu1
 variables:
   DEPLOY_TYPE: dev
   APPROVE: xxx
