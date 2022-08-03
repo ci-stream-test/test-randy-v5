@@ -6,7 +6,7 @@ name: demo
 on:
   push:
     branches:
-#       - main/*
+      - main/*
       - master
 #     branches-ignore:
 #       - main
