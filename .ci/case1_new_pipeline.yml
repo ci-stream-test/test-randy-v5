@@ -5,7 +5,9 @@ name: demo
  
 on:
   push:
-    branches: [ "*" ]
+    branches:
+      - main
+      - master
   
 variables:
   DEPLOY_TYPE: dev
