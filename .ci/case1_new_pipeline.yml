@@ -27,9 +27,6 @@ stages:
           echo ::set-output name=a::111
           echo "hello world!" >> test.txt
         id: step_1
-      - uses: UploadArtifactory@1.*
-        with:
-          filePath: test.txt
     job_id_2:
       name: my_job_2
       steps:
