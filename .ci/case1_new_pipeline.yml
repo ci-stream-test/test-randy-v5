@@ -14,6 +14,9 @@ on:
 #       - src/*
     users:
       - buzhihuilu
+    action:
+      - push-file
+      - new-branch
 variables:
   DEPLOY_TYPE: dev
   APPROVE: xxx
