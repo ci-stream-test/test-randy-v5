@@ -6,10 +6,12 @@ name: demo
 on:
   push:
     branches:
-      - main/*
+#       - main/*
       - master
-    branches-ignore:
-      - main
+#     branches-ignore:
+#       - main
+    paths:
+      - src/*
   
 variables:
   DEPLOY_TYPE: dev
