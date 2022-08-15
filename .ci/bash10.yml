@@ -10,6 +10,6 @@ steps:
   - uses: uploadArtifact@1.*
     name: 归档构件
     with:
-       fileDir: "./report/report.txt"
-       repoName: "pipeline"
-       isParentPipeline: false 
+       filePath: "./report/report.txt"
+       destPath: "upload/"
+       customize: false 
