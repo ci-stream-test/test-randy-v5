@@ -1,5 +1,17 @@
 version: v2.0
+name: 测试归档报告
 
 steps:
-  - run:
-      echo "11"
+  - run: |
+      rm -rf  ./report
+      mkdir ./report
+      echo "test upload report" > ./report/report.txt
+  - uses: reportArchive@1.*
+    name: 蓝盾仓库报告
+    with:
+       fileDir: ./report
+       indexFile: report.txt
+       indexFileCharset: UTF-8
+       reportName: 1
+       isParallel: false
+       isSendEmail: false    
