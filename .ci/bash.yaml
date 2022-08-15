@@ -1,9 +1,8 @@
 version: v2.0
 
 steps:
-  - run:|
+  - run: |
       echo "test3"
       sleep 3000
-      
       echo "end"
   
