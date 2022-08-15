@@ -6,10 +6,10 @@ steps:
       rm -rf  ./report
       mkdir ./report
       echo "test upload report" > ./report/report.txt
-      ls -a
+      ls -a report/
   - uses: uploadArtifact@1.*
     name: 归档构件
     with:
-       fileDir: "./report"
+       fileDir: "./report/report.txt"
        repoName: "pipeline"
        isParentPipeline: false 
