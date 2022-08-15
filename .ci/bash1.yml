@@ -7,7 +7,7 @@ steps:
       mkdir ./report
       echo "test upload report" > ./report/report.txt
   - uses: uploadReport@1.*
-    name: 蓝盾仓库报告
+    name: 归档报告
     with:
        fileDir: ./report
        indexFile: report.txt
