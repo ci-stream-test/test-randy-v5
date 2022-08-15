@@ -6,6 +6,7 @@ steps:
       rm -rf  ./report
       mkdir ./report
       echo "test upload report" > ./report/report.txt
+      ls -a
   - uses: uploadArtifact@1.*
     name: 归档构件
     with:
