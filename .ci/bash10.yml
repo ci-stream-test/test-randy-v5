@@ -1,5 +1,14 @@
 version: v2.0
+name: 测试归档构件
 
 steps:
-  - run:
-      echo "${{ ci.sha_short }}"
+  - run: |
+      rm -rf  ./report
+      mkdir ./report
+      echo "test upload report" > ./report/report.txt
+  - uses: uploadArtifact@1.*
+    name: 归档构件
+    with:
+       fileDir: "./report"
+       repoName: "pipeline"
+       isParentPipeline: false 
