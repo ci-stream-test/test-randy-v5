@@ -6,7 +6,7 @@ steps:
       rm -rf  ./report
       mkdir ./report
       echo "test upload report" > ./report/report.txt
-  - uses: reportArchive@1.*
+  - uses: uploadReport@1.*
     name: 蓝盾仓库报告
     with:
        fileDir: ./report
