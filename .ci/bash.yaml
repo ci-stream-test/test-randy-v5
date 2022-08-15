@@ -2,5 +2,5 @@ version: v2.0
 
 steps:
   - run:
-      echo "test2"
+      echo "test3"
   - checkout: self
